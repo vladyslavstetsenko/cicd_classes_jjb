@@ -1,0 +1,12 @@
+- job:
+    name: CD_For_CD/Jenkins_Job_Builder
+    project-type: freestyle
+
+    scm:
+      - git:
+         url: https://github.com/ochirkov/cicd_classes_jjb.git
+         branches:
+           - master
+
+    builders:
+      - shell: "ls -l"
