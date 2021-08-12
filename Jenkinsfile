@@ -8,15 +8,15 @@ pipeline {
 
     stages {
 
-        stage ("Checkout") {
+        stage ("Checkout JJB") {
             steps {
                 git url: 'https://github.com/ochirkov/cicd_classes_jjb.git'
             }
         }
 
-        stage ("Test") {
+        stage ("Test JJB") {
             steps {
-                 sh "ls -l"
+                 sh "jenkins-jobs --conf jenkins_jobs.ini test -r jobs/ > /dev/null"
             }
         }
     }
