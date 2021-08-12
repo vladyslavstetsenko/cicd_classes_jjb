@@ -3,8 +3,8 @@
 
     project-type: multibranch
 
-     - periodic-folder-trigger: 1m
-     - - dfhsdhhgds prune-dead-branches: True
+    periodic-folder-trigger: 1m
+    prune-dead-branches: True
     script-path: 'Jenkinsfile'
     scm:
       - github:
