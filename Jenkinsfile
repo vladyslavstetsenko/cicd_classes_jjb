@@ -22,7 +22,7 @@ pipeline {
 
         stage ("Test JJB") {
             steps {
-                 sh "jenkins-jobs --conf jenkins_jobs.ini test -r jobs/ > /dev/null"
+                 sh "jenkins-jobs --conf jenkins_jobs.ini test -r jobs/"
             }
         }
 
