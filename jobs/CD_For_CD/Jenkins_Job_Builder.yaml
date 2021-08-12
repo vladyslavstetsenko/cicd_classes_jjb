@@ -1,12 +1,12 @@
 - job:
-    name: CD_For_CD/Jenkins_Job_Builder
-    project-type: freestyle
+    name: 'CD_For_CD/JJB_Pipeline'
 
+    project-type: multibranch
+
+    periodic-folder-trigger: 1m
+    prune-dead-branches: True
+    script-path: 'Jenkinsfile'
     scm:
-      - git:
-         url: https://github.com/ochirkov/cicd_classes_jjb.git
-         branches:
-           - master
-
-    builders:
-      - shell: "ls -l"
+      - github:
+          repo: 'cicd_classes_jjb'
+          repo-owner: 'ochirkov'
