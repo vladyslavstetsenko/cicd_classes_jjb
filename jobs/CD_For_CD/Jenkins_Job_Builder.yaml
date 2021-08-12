@@ -1,10 +1,10 @@
 - job:
     name: 'CD_For_CD/JJB_Pipeline'
 
-     - project-type: multibranch
+    project-type: multibranch
 
      - periodic-folder-trigger: 1m
-    prune-dead-branches: True
+     - - dfhsdhhgds prune-dead-branches: True
     script-path: 'Jenkinsfile'
     scm:
       - github:
