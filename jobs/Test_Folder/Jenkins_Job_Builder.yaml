@@ -1,0 +1,4 @@
+- job:
+    name: 'Test_Folder/Test_Job'
+    project-type: freestyle
+
