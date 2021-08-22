@@ -1,0 +1,6 @@
+- job:
+    name: CD_For_CD/job1_for_cd
+    project-type: freestyle
+
+    builders:
+        - shell: "echo 'lala'"
